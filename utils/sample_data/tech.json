@@ -1,0 +1,34 @@
+{
+  "-NI50kqcdjM6xbrQJdj8": {
+    "firebaseKey": "-NI50kqcdjM6xbrQJdj8",
+    "term": "VS Code",
+    "type": "Tech",
+    "definition": "Source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.",
+    "date_submitted": "01/21/2022",
+    "uid": null
+  },
+  "-NI50kqeiB_E-hyI146c": {
+    "firebaseKey": "-NI50kqeiB_E-hyI146c",
+    "term": "Google Firebase",
+    "type": "Tech",
+    "definition": "Google-backed application development software that enables developers to develop iOS, Android and Web apps. Firebase provides tools for tracking analytics, reporting and fixing app crashes, creating marketing and product experiment.",
+    "date_submitted": "06/01/2022",
+    "uid": null
+  },
+  "-NI50kqgcinpBMw1M4kM": {
+    "firebaseKey": "-NI50kqgcinpBMw1M4kM",
+    "term": "GitHub",
+    "type": "Tech",
+    "definition": "An Internet hosting service for software development and version control using Git.",
+    "date_submitted": "03/24/2022",
+    "uid": null
+  },
+  "-NI50kqjdmAZklohVj4p": {
+    "firebaseKey": "-NI50kqjdmAZklohVj4p",
+    "term": "Bootstrap",
+    "type": "Tech",
+    "definition": "A free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+    "date_submitted": "11/06/2022",
+    "uid": null
+  }
+}

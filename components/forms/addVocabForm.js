@@ -18,12 +18,14 @@ const addVocabForm = (obj = {}) => {
         <label for="definition">Definition</label>
         <textarea class="form-control" placeholder="Term Definition" id="term-definition" style="height: 100px">${obj.definition || ''}</textarea>
       </div></br>
-      <div class="form-group">
-        <label for="date_submitted">Date Submitted</label>
-        <input type="datetime-local" id="start" name="trip-start"
-       value="yyyy-MM-ddThh:mm"
-       min="2022-01-01" max="2022-12-31" required>
-      </div></br>
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <select id="category" name="vocabCategory" value="${obj.category || ''}" required>
+            <option value="HTML" ${obj.category === 'HTML' ? 'selected' : ''}>HTML</option>
+            <option value="CSS" ${obj.category === 'CSS' ? 'selected' : ''}>CSS</option>
+            <option value="JavaScript" ${obj.category === 'JavaScript' ? 'selected' : ''}>JavaScript</option>
+            </select>
+          </div></br>
       <button type="submit" id="submit-vocab-button" class="btn btn-warning">Submit Vocab
       </button>
     </form>`;
@@ -48,8 +50,12 @@ const editVocabForm = (obj = {}) => {
         <textarea class="form-control" placeholder="Term Definition" id="term-definition" style="height: 100px">${obj.definition || ''}</textarea>
       </div></br>
       <div class="form-group">
-        <label for="date_submitted">Date Submitted</label>
-        <input type="text" class="form-control" id="date-submitted" placeholder="Date Submitted" value="${obj.date_submitted || ''}" required>
+      <label for="category">Category:</label>
+      <select id="category" name="vocabCategory" value="${obj.category || ''}" required>
+        <option value="HTML" ${obj.category === 'HTML' ? 'selected' : ''}>HTML</option>
+        <option value="CSS" ${obj.category === 'CSS' ? 'selected' : ''}>CSS</option>
+        <option value="JavaScript" ${obj.category === 'JavaScript' ? 'selected' : ''}>JavaScript</option>
+        </select>
       </div></br>
       <button type="submit" id="submit-vocab-button" class="btn btn-warning">Submit Vocab
       </button>

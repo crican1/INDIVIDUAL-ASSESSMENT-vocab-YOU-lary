@@ -5,7 +5,7 @@
     "type": "Language",
     "definition": "Containers that hold variables; they're used to group together similar variables.",
     "date_submitted": "02/06/2022",
-    "uid": null
+    "uid": ""
   },
   "-NI50kqVY4UY3tSwee7v": {
     "firebaseKey": "-NI50kqVY4UY3tSwee7v",
@@ -13,7 +13,7 @@
     "type": "Language",
     "definition": "Block of code that can be referenced by name to run the code it contains.",
     "date_submitted": "07/04/2022",
-    "uid": null
+    "uid": ""
   },
   "-NI50kqYVBhAr4Pe3LTm": {
     "firebaseKey": "-NI50kqYVBhAr4Pe3LTm",
@@ -21,7 +21,7 @@
     "type": "Language",
     "definition": "A container that holds a single number, word, or other information that you can use throughout a program.",
     "date_submitted": "02/12/2022",
-    "uid": null
+    "uid": ""
   },
   "-NI50kq_pvLpRyKaAVvh": {
     "firebaseKey": "-NI50kq_pvLpRyKaAVvh",
@@ -29,7 +29,7 @@
     "type": "Language",
     "definition": "Data type with two possible values: true or false.",
     "date_submitted": "01/11/2022",
-    "uid": null
+    "uid": ""
   },
   "-NI50kqcdjM6xbrQJdj8": {
     "firebaseKey": "-NI50kqcdjM6xbrQJdj8",
@@ -37,7 +37,7 @@
     "type": "Tech",
     "definition": "Source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.",
     "date_submitted": "01/21/2022",
-    "uid": null
+    "uid": ""
   },
   "-NI50kqeiB_E-hyI146c": {
     "firebaseKey": "-NI50kqeiB_E-hyI146c",
@@ -45,7 +45,7 @@
     "type": "Tech",
     "definition": "Google-backed application development software that enables developers to develop iOS, Android and Web apps. Firebase provides tools for tracking analytics, reporting and fixing app crashes, creating marketing and product experiment.",
     "date_submitted": "06/01/2022",
-    "uid": null
+    "uid": ""
   },
   "-NI50kqgcinpBMw1M4kM": {
     "firebaseKey": "-NI50kqgcinpBMw1M4kM",
@@ -53,7 +53,7 @@
     "type": "Tech",
     "definition": "An Internet hosting service for software development and version control using Git.",
     "date_submitted": "03/24/2022",
-    "uid": null
+    "uid": ""
   },
   "-NI50kqjdmAZklohVj4p": {
     "firebaseKey": "-NI50kqjdmAZklohVj4p",
@@ -61,6 +61,6 @@
     "type": "Tech",
     "definition": "A free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
     "date_submitted": "11/06/2022",
-    "uid": null
+    "uid": ""
   }
 }

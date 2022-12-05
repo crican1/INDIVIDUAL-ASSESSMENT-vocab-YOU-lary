@@ -9,7 +9,7 @@ const formEvents = () => {
     if (e.target.id.includes('#submit-vocab-button')) {
       // console.warn('CLICKED SUBMIT VOCAB', e.target.id);
       const payload = {
-        term: document.querySelector('#title').value,
+        term: document.querySelector('#term').value,
         type: document.querySelector('#description').value,
         definition: document.querySelector('#term-definition').value,
         date_submitted: document.querySelector('#date-submitted').value,
@@ -27,11 +27,11 @@ const formEvents = () => {
     // CLICK EVENT FOR EDITING A VOCAB
     if (e.target.id.includes('edit-vocab-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
-      // console.warn('CLICKED EDIT VOCAB', e.target.id);
+      console.warn('CLICKED EDIT VOCAB', e.target.id);
       console.warn(firebaseKey);
       const payload = {
-        term: document.querySelector('#title').value,
-        type: document.querySelector('#description').value,
+        term: document.querySelector('#term').value,
+        type: document.querySelector('#type').value,
         definition: document.querySelector('#term-definition').value,
         date_submitted: document.querySelector('#date-submitted').value,
       };

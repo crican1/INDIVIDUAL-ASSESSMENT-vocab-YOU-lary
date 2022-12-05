@@ -14,12 +14,15 @@ const navBar = () => {
             <a class="nav-link" href="#" id="show-all">Show All</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#" id="all-language">
-              All Language <span class="sr-only">(current)</span>
+            <a class="nav-link" href="#" id="html-button">
+              HTML <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="all-tech">All Tech</a>
+            <a class="nav-link" href="#" id="css-button">CSS</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#" id="js-button">JS</a>
           </li>
           <li>
           <input

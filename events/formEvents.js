@@ -1,18 +1,22 @@
-import { createVocab, getVocab, updateVocab } from '../api/vocabData';
+import {
+  createVocab, getVocab, updateVocab
+} from '../api/vocabData';
 import { showVocab } from '../pages/viewVocab';
+import timestamp from '../utils/timeStamp';
 
 const formEvents = () => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
 
     // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A VOCAB
-    if (e.target.id.includes('#submit-vocab-button')) {
+    if (e.target.id.includes('submit-vocab-button')) {
       // console.warn('CLICKED SUBMIT VOCAB', e.target.id);
       const payload = {
         term: document.querySelector('#term').value,
         type: document.querySelector('#description').value,
         definition: document.querySelector('#term-definition').value,
-        date_submitted: document.querySelector('#date-submitted').value,
+        category: document.querySelector('#category').value,
+        date_submitted: timestamp,
       };
       // console.warn(payload);
       createVocab(payload).then(({ name }) => {
@@ -33,7 +37,9 @@ const formEvents = () => {
         term: document.querySelector('#term').value,
         type: document.querySelector('#type').value,
         definition: document.querySelector('#term-definition').value,
-        date_submitted: document.querySelector('#date-submitted').value,
+        date_submitted: timestamp,
+        category: document.querySelector('#category').value,
+        firebaseKey,
       };
 
       updateVocab(payload).then(() => {

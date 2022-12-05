@@ -1,4 +1,6 @@
-import { deleteSingleVocab, getSingleVocab, getVocab } from '../api/vocabData';
+import {
+  deleteSingleVocab, getCss, getHtml, getJs, getSingleVocab, getVocab
+} from '../api/vocabData';
 import { showVocab } from '../pages/viewVocab';
 import { addVocabForm, editVocabForm } from '../components/forms/addVocabForm';
 
@@ -16,7 +18,7 @@ const domEvents = () => {
         });
       }
     }
-    // TODO: CLICK EVENT FOR SHOWING FORM FOR ADDING A BOOK
+    // TODO: CLICK EVENT FOR SHOWING FORM FOR ADDING A VOCAB
     if (e.target.id.includes('add-vocab-button')) {
       // console.warn('ADD BOOK');
       addVocabForm();
@@ -31,6 +33,21 @@ const domEvents = () => {
       getSingleVocab(firebaseKey).then((vocabObj) => editVocabForm(vocabObj));
       // getSingleBook(firebaseKey).then(addBookForm); // using the callback method
     }
+
+    // CLICK EVENT FOR FILTERING BY CSS
+    document.querySelector('#css-button').addEventListener('click', () => {
+      getCss().then(showVocab);
+    });
+
+    // CLICK EVENT FOR FILTERING BY HTML
+    document.querySelector('#html-button').addEventListener('click', () => {
+      getHtml().then(showVocab);
+    });
+
+    // CLICK EVENT FOR FILTERING BY JS
+    document.querySelector('#js-button').addEventListener('click', () => {
+      getJs().then(showVocab);
+    });
   });
 };
 

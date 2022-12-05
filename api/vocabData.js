@@ -51,7 +51,7 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
 // UPDATE VOCAB
 const updateVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab/${payload.firebaseKey}.json`, {
-    method: 'Patch',
+    method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -76,15 +76,52 @@ const deleteSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // FILTER VOCAB BY TYPE
-const vocabByType = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="type"&equalTo=true`, {
+
+// GET CSS VOCAB
+const getCss = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="CSS"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
+    .then((data) => {
+      const css = Object.values(data).filter((obj) => obj.category === 'CSS');
+      resolve(css);
+    })
+    .catch(reject);
+});
+
+// GET HTML VOCAB
+const getHtml = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="HTML"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const html = Object.values(data).filter((obj) => obj.category === 'HTML');
+      resolve(html);
+    })
+    .catch(reject);
+});
+
+// GET JS VOCAB
+const getJs = () => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="JS"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const js = Object.values(data).filter((obj) => obj.category === 'JS');
+      resolve(js);
+    })
     .catch(reject);
 });
 
@@ -94,5 +131,7 @@ export {
   createVocab,
   updateVocab,
   deleteSingleVocab,
-  vocabByType
+  getCss,
+  getHtml,
+  getJs
 };

@@ -1,5 +1,6 @@
+import { languageByType } from '../api/languageData';
 import { getVocab } from '../api/vocabData';
-import { emptyVocab, showVocab } from '../pages/viewVocab';
+import { showVocab } from '../pages/viewVocab';
 import { signOut } from '../utils/auth';
 
 const navigationEvents = () => {
@@ -7,20 +8,14 @@ const navigationEvents = () => {
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
 
+  // Event listener to have vocab show up
   document.querySelector('#show-all').addEventListener('click', () => {
     getVocab().then(showVocab);
   });
 
-  // Event listener to have vocab show up
+  // Event listener to have language show up
   document.querySelector('#all-language').addEventListener('click', () => {
-  // console.warn('CLICKED LANGUAGE');
-    getVocab().then((vocabArray) => {
-      if (vocabArray.length) {
-        showVocab(vocabArray);
-      } else {
-        emptyVocab();
-      }
-    });
+    languageByType().then(showVocab);
   });
 };
 

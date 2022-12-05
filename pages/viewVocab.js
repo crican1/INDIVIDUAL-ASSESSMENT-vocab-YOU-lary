@@ -19,7 +19,7 @@ const showVocab = (array) => {
         <div class="card-body">
           <h5 class="card-title">${obj.term}</h5><hr><br>
           <h5 class"card-title">${obj.type}</h5>
-          <p class="card-text">${obj.definition}</p><hr>
+          <p class="card-text">${obj.definition}</p>
         </div>
         <div class="card-body">
           <a href="#" id="edit-vocab-btn--${obj.firebaseKey}" class="card-link">Edit</a>

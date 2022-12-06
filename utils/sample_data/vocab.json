@@ -3,10 +3,10 @@
     "firebaseKey": "-NI50kqTXlZzzGMdgrFq",
     "term": "Array",
     "type": "Language",
-    "definition": "Containers that hold variables; they're used to group together similar variables.",
+    "definition": "Containers that hold variables; they're used to group together similar variables...",
     "category": "JS",
     "date_submitted": "02/06/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   },
   "-NI50kqVY4UY3tSwee7v": {
     "firebaseKey": "-NI50kqVY4UY3tSwee7v",
@@ -15,7 +15,7 @@
     "definition": "Block of code that can be referenced by name to run the code it contains.",
     "category": "JS",
     "date_submitted": "07/04/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   },
   "-NI50kqYVBhAr4Pe3LTm": {
     "firebaseKey": "-NI50kqYVBhAr4Pe3LTm",
@@ -24,7 +24,7 @@
     "definition": "A container that holds a single number, word, or other information that you can use throughout a program.",
     "category": "HTML",
     "date_submitted": "02/12/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   },
   "-NI50kq_pvLpRyKaAVvh": {
     "firebaseKey": "-NI50kq_pvLpRyKaAVvh",
@@ -33,7 +33,7 @@
     "definition": "Data type with two possible values: true or false.",
     "category": "HTML",
     "date_submitted": "01/11/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   },
   "-NI50kqcdjM6xbrQJdj8": {
     "firebaseKey": "-NI50kqcdjM6xbrQJdj8",
@@ -42,7 +42,7 @@
     "definition": "Source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.",
     "category": "HTML",
     "date_submitted": "01/21/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   },
   "-NI50kqeiB_E-hyI146c": {
     "firebaseKey": "-NI50kqeiB_E-hyI146c",
@@ -51,7 +51,7 @@
     "definition": "Google-backed application development software that enables developers to develop iOS, Android and Web apps. Firebase provides tools for tracking analytics, reporting and fixing app crashes, creating marketing and product experiment.",
     "category": "HTML",
     "date_submitted": "06/01/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   },
   "-NI50kqgcinpBMw1M4kM": {
     "firebaseKey": "-NI50kqgcinpBMw1M4kM",
@@ -60,7 +60,7 @@
     "definition": "An Internet hosting service for software development and version control using Git.",
     "category": "CSS",
     "date_submitted": "03/24/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   },
   "-NI50kqjdmAZklohVj4p": {
     "firebaseKey": "-NI50kqjdmAZklohVj4p",
@@ -69,6 +69,6 @@
     "definition": "A free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
     "category": "CSS",
     "date_submitted": "11/06/2022",
-    "uid": ""
+    "uid": "HP4tiOgZNNNYKAUYJhh16AUE3mX2"
   }
 }

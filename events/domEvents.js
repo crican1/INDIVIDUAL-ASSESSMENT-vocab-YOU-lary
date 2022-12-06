@@ -2,7 +2,7 @@ import {
   deleteSingleVocab, getCss, getHtml, getJs, getSingleVocab, getVocab
 } from '../api/vocabData';
 import { showVocab } from '../pages/viewVocab';
-import { addVocabForm, editVocabForm } from '../components/forms/addVocabForm';
+import addVocabForm from '../components/forms/addVocabForm';
 
 const domEvents = () => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -30,7 +30,7 @@ const domEvents = () => {
       // console.warn(e.target.id.split('--'));
       const [, firebaseKey] = e.target.id.split('--');
 
-      getSingleVocab(firebaseKey).then((vocabObj) => editVocabForm(vocabObj));
+      getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj));
       // getSingleBook(firebaseKey).then(addBookForm); // using the callback method
     }
 
@@ -48,7 +48,8 @@ const domEvents = () => {
     document.querySelector('#js-button').addEventListener('click', () => {
       getJs().then(showVocab);
     });
+
+    // CLICK EVENT FOR ADDING A VOCAB WORD
   });
 };
-
 export default domEvents;

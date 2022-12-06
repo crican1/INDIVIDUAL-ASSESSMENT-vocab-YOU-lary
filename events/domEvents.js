@@ -4,7 +4,7 @@ import {
 import { showVocab } from '../pages/viewVocab';
 import addVocabForm from '../components/forms/addVocabForm';
 
-const domEvents = () => {
+const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
     // TODO: CLICK EVENT FOR DELETING A VOCAB
     if (e.target.id.includes('delete-vocab-btn')) {
@@ -14,7 +14,7 @@ const domEvents = () => {
         const [, firebaseKey] = e.target.id.split('--');
 
         deleteSingleVocab(firebaseKey).then(() => {
-          getVocab().then(showVocab);
+          getVocab(user.uid).then(showVocab);
         });
       }
     }
@@ -36,17 +36,17 @@ const domEvents = () => {
 
     // CLICK EVENT FOR FILTERING BY CSS
     document.querySelector('#css-button').addEventListener('click', () => {
-      getCss().then(showVocab);
+      getCss(user.uid).then(showVocab);
     });
 
     // CLICK EVENT FOR FILTERING BY HTML
     document.querySelector('#html-button').addEventListener('click', () => {
-      getHtml().then(showVocab);
+      getHtml(user.uid).then(showVocab);
     });
 
     // CLICK EVENT FOR FILTERING BY JS
     document.querySelector('#js-button').addEventListener('click', () => {
-      getJs().then(showVocab);
+      getJs(user.uid).then(showVocab);
     });
 
     // CLICK EVENT FOR ADDING A VOCAB WORD

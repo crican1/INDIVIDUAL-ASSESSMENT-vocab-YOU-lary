@@ -3,8 +3,8 @@ import client from '../utils/client';
 const endpoint = client.databaseURL;
 
 // GET ALL VOCAB
-const getVocab = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json`, {
+const getVocab = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -78,8 +78,8 @@ const deleteSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
 // FILTER VOCAB BY TYPE
 
 // GET CSS VOCAB
-const getCss = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="CSS"`, {
+const getCss = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -94,8 +94,8 @@ const getCss = () => new Promise((resolve, reject) => {
 });
 
 // GET HTML VOCAB
-const getHtml = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="HTML"`, {
+const getHtml = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -110,8 +110,8 @@ const getHtml = () => new Promise((resolve, reject) => {
 });
 
 // GET JS VOCAB
-const getJs = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo="JS"`, {
+const getJs = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

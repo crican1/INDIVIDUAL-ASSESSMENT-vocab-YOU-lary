@@ -9,11 +9,11 @@ const formEvents = () => {
     e.preventDefault();
 
     // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A VOCAB
-    if (e.target.id.includes('submit-vocab-button')) {
-      // console.warn('CLICKED SUBMIT VOCAB', e.target.id);
+    if (e.target.id.includes('submit-vocab')) {
+      console.warn('CLICKED SUBMIT VOCAB', e.target.id);
       const payload = {
         term: document.querySelector('#term').value,
-        type: document.querySelector('#description').value,
+        type: document.querySelector('#type').value,
         definition: document.querySelector('#term-definition').value,
         category: document.querySelector('#category').value,
         date_submitted: timestamp,
@@ -29,7 +29,7 @@ const formEvents = () => {
     }
 
     // CLICK EVENT FOR EDITING A VOCAB
-    if (e.target.id.includes('edit-vocab-btn')) {
+    if (e.target.id.includes('edit-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
       console.warn('CLICKED EDIT VOCAB', e.target.id);
       console.warn(firebaseKey);

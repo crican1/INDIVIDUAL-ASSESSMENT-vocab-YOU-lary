@@ -4,7 +4,7 @@ import {
 import { showVocab } from '../pages/viewVocab';
 import timestamp from '../utils/timeStamp';
 
-const formEvents = () => {
+const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -17,13 +17,14 @@ const formEvents = () => {
         definition: document.querySelector('#term-definition').value,
         category: document.querySelector('#category').value,
         date_submitted: timestamp,
+        uid: user.uid
       };
       // console.warn(payload);
       createVocab(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
 
         updateVocab(patchPayload).then(() => {
-          getVocab().then(showVocab);
+          getVocab(user.uid).then(showVocab);
         });
       });
     }
@@ -40,10 +41,11 @@ const formEvents = () => {
         date_submitted: timestamp,
         category: document.querySelector('#category').value,
         firebaseKey,
+        user: user.uid
       };
 
       updateVocab(payload).then(() => {
-        getVocab().then(showVocab);
+        getVocab(user.uid).then(showVocab);
       });
     }
   });
